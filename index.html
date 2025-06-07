@@ -6,6 +6,9 @@
   <title>Dnyaneshwari | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Roboto', sans-serif; background: #fff; color: #5b21b6; } /* violet-700 */
@@ -45,7 +48,7 @@
   </header>
 
 <!-- Hero -->
-<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-[#f9f9fc]">
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-violet-100">
   <h2 class="text-5xl font-extrabold mb-4 text-violet-700 relative">
     Hi, I'm 
     <span class="relative text-violet-900 before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-violet-400 before:rounded-full before:opacity-50">
@@ -53,12 +56,12 @@
     </span>
   </h2>
   <p class="max-w-xl text-black font-bold text-lg md:text-xl leading-relaxed">
-  I build <span class="font-bold text-black">beautiful websites</span> and <span class="font-bold text-black">mobile apps</span> that people love to use.<br />
-  Let’s create something <span class="font-bold text-black">great together!</span>
+  A passionate developer <span class="font-bold text-black">who loves creating beautiful</span> and <span class="font-bold text-black">functional websites and apps.</span><br />
+  I enjoy learning, solving problems, and turning ideas into reality through code.
 </p>
 
   <a href="#projects" class="mt-8 px-8 py-3 bg-violet-600 text-white rounded-full shadow-lg hover:bg-violet-500 transition duration-300 font-semibold">
-    See My Work
+    See My Projects
   </a>
 </section>
 
@@ -68,10 +71,12 @@
     
     <!-- Left Side: Text Content -->
     <div class="md:w-1/2 text-center md:text-left">
-      <h2 class="text-4xl font-bold text-violet-600 mb-6">About Me</h2>
+      <h2 class="text-4xl font-bold text-violet-500 mb-6">
+        About <span class="text-violet-900">Me</span>
+      </h2>
       <p class="text-violet-700 text-lg leading-relaxed">
         I’m <strong>Dnyaneshwari Jadhav</strong>. I love turning ideas into real websites and apps.  
-        My goal is to make digital projects easy to use and look great.
+        My goal is to make your digital projects easy to use and look great.
       </p>
       <p class="text-violet-700 text-lg mt-4 leading-relaxed">
         I work with <strong>Flutter, Java, Firebase,</strong> and <strong>Tailwind CSS</strong>.  
@@ -103,9 +108,11 @@
 
 
 
-<section id="skills" class="py-20 bg-[#f9f9fc]">
+<section id="skills" class="py-20 bg-violet-50">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center text-violet-600 mb-12">Skills</h2>
+    <h2 class="text-4xl font-bold mb-4 text-center">
+      My <span class="text-violet-900">Skills</span>
+    </h2>
 
     <!-- Tabs -->
     <div class="flex justify-center space-x-4 mb-10">
@@ -249,31 +256,29 @@
 </section>
 
 
- <!-- Projects -->
+<!-- Projects -->
 <section id="projects" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold mb-4">
-      Featured <span class="text-violet-600">Projects</span>
+      Featured <span class="text-violet-900">Projects</span>
     </h2>
     <p class="text-gray-600 mb-10">
       Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-violet-700 relative">
-      <!-- Project 1 -->
-      <div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-violet-700">
+      
+      <!-- Reusable Project Card Template -->
+      <div class="bg-violet-50 rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl">
         <img src="./images/images.jpg" alt="Marketmate project" class="rounded-lg mb-4 object-cover w-full h-60" />
-
-              <div class="flex flex-wrap gap-2 mb-2">
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Flutter & Dart</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Firebase</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">APIs</span>
-  </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Flutter & Dart</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Firebase</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">APIs</span>
+        </div>
         <h3 class="text-xl font-semibold mb-1">Marketmate</h3>
         <p>A Flutter app that helps small businesses connect with customers and manage waste better.</p>
-
-                 <!-- GitHub Icon Link -->
-  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+         <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
       <path fill-rule="evenodd"
         d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
@@ -281,56 +286,51 @@
     </svg>
   </a>
       </div>
+
       <!-- Project 2 -->
-      <div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
+      <div class="bg-violet-50 rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl">
         <img src="./images/portfolio.png" alt="Portfolio" class="rounded-lg mb-4 object-cover w-full h-60" />
         <div class="flex flex-wrap gap-2 mb-2">
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Tailwind CSS</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">JavaScript</span>
-  </div>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Tailwind CSS</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">JavaScript</span>
+        </div>
         <h3 class="text-xl font-semibold mb-1">My Portfolio</h3>
         <p>My personal website built with modern design to showcase my skills and work.</p>
-
-          <!-- GitHub Icon Link -->
-  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+         <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
       <path fill-rule="evenodd"
         d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
         clip-rule="evenodd" />
     </svg>
   </a>
-        
       </div>
-      <!-- Project 3 -->
-<div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
-  <img src="./images/pgmanager.png" alt="PG Management System" class="rounded-lg mb-4 object-cover w-full h-60" />
-  
-  <div class="flex flex-wrap gap-2 mb-2">
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Java</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Spring Boot</span>
-    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML&CSS</span>
-  </div>
-  
-  <h3 class="text-xl font-semibold mb-1">PG Management System</h3>
-  <p class="mb-10">A Java-based system to manage PG houses and tenants easily.</p>
 
-  <!-- GitHub Icon Link -->
-  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+      <!-- Project 3 -->
+      <div class="bg-violet-50 rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+        <img src="./images/pgmanager.png" alt="PG Management System" class="rounded-lg mb-4 object-cover w-full h-60" />
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Java</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Spring Boot</span>
+          <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML&CSS</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-1">PG Management System</h3>
+        <p class="mb-10">A Java-based system to manage PG houses and tenants easily.</p>
+         <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
       <path fill-rule="evenodd"
         d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
         clip-rule="evenodd" />
     </svg>
   </a>
-</div>
+      </div>
 
-
+    </div>
 
     <!-- GitHub Button -->
     <div class="flex justify-center mt-12">
       <a href="https://github.com/dnyanu-06" target="_blank"
-        class="inline-blockitems-center px-6 py-3 bg-violet-600 text-white rounded-full hover:bg-white hover:text-violet-600 border border-violet-600 transition font-semibold shadow">
+        class="inline-block items-center px-6 py-3 bg-violet-600 text-white rounded-full hover:bg-white hover:text-violet-600 border border-violet-600 transition font-semibold shadow">
         Check My GitHub
       </a>
     </div>
@@ -339,24 +339,24 @@
 
 
 <!-- Achievements -->
-<section id="achievements" class="py-20 bg-[#f9f9fc]">
+<section id="achievements" class="py-20 bg-violet-50">
   <div class="max-w-6xl mx-auto px-3 text-violet-700">
     <h2 class="text-4xl font-bold text-center text-violet-600 mb-10">Achievements</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       
-      <div class="bg-white rounded-xl shadow p-3 text-center">
+      <div class="bg-white rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center">
         <img src="./images/ideathon.jpg" alt="Award" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
         <h3 class="text-xl font-semibold mb-1">Rising Star Award</h3>
         <p>Won ₹15,000 prize at Western Maharashtra’s biggest Ideathon in 2024.</p>
       </div>
       
-      <div class="bg-white rounded-xl shadow p-3 text-center">
+      <div class="bg-white rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center">
         <img src="./images/SIH.jpg" alt="Hackathon" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
         <h3 class="text-xl font-semibold mb-1">Smart India Hackathon</h3>
         <p>Qualified in the internal round with the Marketmate app.</p>
       </div>
       
-      <div class="bg-white rounded-xl shadow p-3 text-center">
+      <div class="bg-white rounded-xl shadow-lg p-4 relative transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center">
         <img src="./images/ranker.jpg" alt="Academic Rank" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
         <h3 class="text-xl font-semibold mb-1">Second Ranker - CSE Department</h3>
         <p>Achieved second rank in the Computer Science & Engineering Department for outstanding academic performance.</p>
@@ -368,11 +368,11 @@
 
 
 <!-- Contact Section -->
-<section id="contact" class="py-20 bg-violet-50">
+<section id="contact" class="py-20 bg-[#f9f9fc]">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold text-gray-900">
-        Get In <span class="text-violet-600">Touch</span>
+      <h2 class="text-4xl font-bold text-violet-500">
+        Get In <span class="text-violet-900">Touch</span>
       </h2>
       <p class="text-gray-600 mt-2">Have a project in mind or want to collaborate? I'm open to new opportunities.</p>
     </div>
@@ -408,7 +408,7 @@
           </div>
           <div>
             <p class="text-gray-700 font-medium">Phone</p>
-            <p class="text-gray-800">+91 87888474870</p>
+            <p class="text-gray-800">+91 9130447367</p>
           </div>
         </div>
 
@@ -428,11 +428,10 @@
         <!-- Socials -->
         <div>
           <p class="text-gray-700 font-medium mt-4 mb-2">Connect With Me</p>
-          <div class="flex space-x-4 text-2xl text-violet-600">
+          <div class="flex space-x-8 text-4xl text-violet-600">
             <a href="https://linkedin.com/in/dnyaneshwari-jadhav-5581" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/dnyanu-06" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitch"></i></a>
           </div>
         </div>
       </div>
@@ -472,12 +471,8 @@
 
 
   <!-- Footer -->
-  <footer class="bg-violet-100 text-violet-700 py-6 text-center">
+  <footer class="bg-violet-100 text-violet-700 py-6 ">
     <p>© 2025 Dnyaneshwari Jadhav. All rights reserved.</p>
-    <div class="mt-2 space-x-6">
-      <a href="https://github.com/dnyanu-06" target="_blank" class="hover:text-violet-400">GitHub</a>
-      <a href="https://www.linkedin.com/in/dnyaneshwari-jadhav-5581" target="_blank" class="hover:text-violet-400">LinkedIn</a>
-    </div>
   </footer>
 
   <script>
