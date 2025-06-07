@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dnyaneshwari | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; background: #fff; color: #5b21b6; } /* violet-700 */
+  </style>
+</head>
+<body class="bg-white text-violet-700">
+
+  <!-- Navbar -->
+ <header class="fixed w-full bg-white shadow-md z-50">
+  <div class="container mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <a href="#home" class="text-2xl font-bold text-violet-700 flex items-center space-x-2">
+      <span class="relative z-10">
+        <span class="text-violet-900 drop-shadow-lg">Dnyaneshwari</span> Portfolio
+      </span>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex space-x-10 text-violet-700 drop-shadow-lg font-bold">
+      <a href="#home" class="hover:text-violet-500 transition-colors duration-300">Home</a>
+      <a href="#about" class="hover:text-violet-500 transition-colors duration-300">About</a>
+      <a href="#skills" class="hover:text-violet-500 transition-colors duration-300">Skills</a>
+      <a href="#projects" class="hover:text-violet-500 transition-colors duration-300">Projects</a>
+      <a href="#achievements" class="hover:text-violet-500 transition-colors duration-300">Achievements</a>
+      <a href="#contact" class="hover:text-violet-500 transition-colors duration-300">Contact</a>
+    </nav>
+      <button id="menuBtn" class="md:hidden text-violet-600 focus:outline-none">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white text-center py-4 space-y-4 text-violet-700 drop-shadow-lg font-bold">
+      <a href="#home" class="block hover:text-violet-400">Home</a>
+      <a href="#about" class="block hover:text-violet-400">About</a>
+      <a href="#skills" class="block hover:text-violet-400">Skills</a>
+      <a href="#projects" class="block hover:text-violet-400">Projects</a>
+      <a href="#achievements" class="block hover:text-violet-400">Achievements</a>
+      <a href="#contact" class="block hover:text-violet-400">Contact</a>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-[#f9f9fc]">
+  <h2 class="text-5xl font-extrabold mb-4 text-violet-700 relative">
+    Hi, I'm 
+    <span class="relative text-violet-900 before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 before:bg-violet-400 before:rounded-full before:opacity-50">
+      Dnyaneshwari
+    </span>
+  </h2>
+  <p class="max-w-xl text-black font-bold text-lg md:text-xl leading-relaxed">
+  I build <span class="font-bold text-black">beautiful websites</span> and <span class="font-bold text-black">mobile apps</span> that people love to use.<br />
+  Let’s create something <span class="font-bold text-black">great together!</span>
+</p>
+
+  <a href="#projects" class="mt-8 px-8 py-3 bg-violet-600 text-white rounded-full shadow-lg hover:bg-violet-500 transition duration-300 font-semibold">
+    See My Work
+  </a>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+    
+    <!-- Left Side: Text Content -->
+    <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl font-bold text-violet-600 mb-6">About Me</h2>
+      <p class="text-violet-700 text-lg leading-relaxed">
+        I’m <strong>Dnyaneshwari Jadhav</strong>. I love turning ideas into real websites and apps.  
+        My goal is to make digital projects easy to use and look great.
+      </p>
+      <p class="text-violet-700 text-lg mt-4 leading-relaxed">
+        I work with <strong>Flutter, Java, Firebase,</strong> and <strong>Tailwind CSS</strong>.  
+        I enjoy learning new things and building helpful tools for small businesses and communities.
+      </p>
+
+      <!-- Buttons -->
+      <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="#contact"
+          class="px-6 py-3 bg-violet-600 text-white rounded-full border border-violet-600
+          hover:bg-white hover:text-violet-600 transition font-semibold shadow">
+          Get In Touch
+        </a>
+        <a href="./resume/Resume_Dnyaneshwari_SE.pdf" download
+          class="px-6 py-3 bg-white text-violet-600 rounded-full border border-violet-600
+          hover:bg-violet-600 hover:text-white transition font-semibold shadow">
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="md:w-1/2">
+      <img src="./images/IMG_20230819_132148.jpg" alt="About Me" class="rounded-lg shadow-xl w-full max-w-sm mx-auto" />
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="skills" class="py-20 bg-[#f9f9fc]">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-violet-600 mb-12">Skills</h2>
+
+    <!-- Tabs -->
+    <div class="flex justify-center space-x-4 mb-10">
+      <button class="tab-btn px-6 py-2 rounded-full bg-violet-600 text-white font-medium" onclick="filterSkills('all')" id="tab-all">All</button>
+      <button class="tab-btn px-6 py-2 rounded-full hover:bg-violet-100 text-violet-600 font-medium" onclick="filterSkills('frontend')" id="tab-frontend">Frontend</button>
+      <button class="tab-btn px-6 py-2 rounded-full hover:bg-violet-100 text-violet-600 font-medium" onclick="filterSkills('backend')" id="tab-backend">Backend</button>
+      <button class="tab-btn px-6 py-2 rounded-full hover:bg-violet-100 text-violet-600 font-medium" onclick="filterSkills('tools')" id="tab-tools">Tools</button>
+    </div>
+
+    <!-- Skill Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="skills-container">
+
+      <!-- Skill Card Template -->
+      <div data-category="frontend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">HTML / CSS</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 95%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">95%</span>
+        </div>
+      </div>
+
+      <div data-category="frontend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Java</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 85%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">85%</span>
+        </div>
+      </div>
+
+      <div data-category="frontend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">JavaScript</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 85%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">85%</span>
+        </div>
+      </div>
+
+      <div data-category="frontend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Tailwind CSS</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 90%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">90%</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div data-category="backend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Java (Spring Boot)</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 85%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">85%</span>
+        </div>
+      </div>
+
+      <div data-category="backend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Hibernate</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 75%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">75%</span>
+        </div>
+      </div>
+
+      <div data-category="backend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Firebase</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 80%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">80%</span>
+        </div>
+      </div>
+
+      
+      <div data-category="backend" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">MySQL</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 80%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">80%</span>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div data-category="tools" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Figma</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 75%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">75%</span>
+        </div>
+      </div>
+
+      <div data-category="tools" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Git / GitHub</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 90%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">90%</span>
+        </div>
+      </div>
+
+      <div data-category="tools" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">VS Code</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 85%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">85%</span>
+        </div>
+      </div>
+
+      
+      <div data-category="tools" class="skill-card bg-white p-5 rounded-xl shadow-md">
+        <p class="font-semibold mb-3 text-gray-800">Eclipse</p>
+        <div class="h-2 bg-violet-200 rounded-full relative">
+          <div class="bg-violet-600 h-2 rounded-full" style="width: 85%"></div>
+          <span class="absolute right-0 top-[-1.5rem] text-sm text-gray-600">65%</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function filterSkills(category) {
+      const cards = document.querySelectorAll(".skill-card");
+      cards.forEach(card => {
+        if (category === "all" || card.dataset.category === category) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      document.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.remove("bg-violet-600", "text-white");
+        btn.classList.add("text-violet-600", "hover:bg-violet-100");
+      });
+
+      const activeBtn = document.getElementById("tab-" + category);
+      activeBtn.classList.add("bg-violet-600", "text-white");
+      activeBtn.classList.remove("hover:bg-violet-100", "text-violet-600");
+    }
+
+    // Show all by default
+    filterSkills("all");
+  </script>
+</section>
+
+
+ <!-- Projects -->
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">
+      Featured <span class="text-violet-600">Projects</span>
+    </h2>
+    <p class="text-gray-600 mb-10">
+      Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-violet-700 relative">
+      <!-- Project 1 -->
+      <div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
+        <img src="./images/images.jpg" alt="Marketmate project" class="rounded-lg mb-4 object-cover w-full h-60" />
+
+              <div class="flex flex-wrap gap-2 mb-2">
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Flutter & Dart</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Firebase</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">APIs</span>
+  </div>
+        <h3 class="text-xl font-semibold mb-1">Marketmate</h3>
+        <p>A Flutter app that helps small businesses connect with customers and manage waste better.</p>
+
+                 <!-- GitHub Icon Link -->
+  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path fill-rule="evenodd"
+        d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
+        clip-rule="evenodd" />
+    </svg>
+  </a>
+      </div>
+      <!-- Project 2 -->
+      <div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
+        <img src="./images/portfolio.png" alt="Portfolio" class="rounded-lg mb-4 object-cover w-full h-60" />
+        <div class="flex flex-wrap gap-2 mb-2">
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Tailwind CSS</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">JavaScript</span>
+  </div>
+        <h3 class="text-xl font-semibold mb-1">My Portfolio</h3>
+        <p>My personal website built with modern design to showcase my skills and work.</p>
+
+          <!-- GitHub Icon Link -->
+  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path fill-rule="evenodd"
+        d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
+        clip-rule="evenodd" />
+    </svg>
+  </a>
+        
+      </div>
+      <!-- Project 3 -->
+<div class="bg-[#f9f9fc] rounded-xl shadow p-4 relative">
+  <img src="./images/pgmanager.png" alt="PG Management System" class="rounded-lg mb-4 object-cover w-full h-60" />
+  
+  <div class="flex flex-wrap gap-2 mb-2">
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Java</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">Spring Boot</span>
+    <span class="bg-white text-violet-700 px-3 py-1 rounded-full text-sm shadow">HTML&CSS</span>
+  </div>
+  
+  <h3 class="text-xl font-semibold mb-1">PG Management System</h3>
+  <p class="mb-10">A Java-based system to manage PG houses and tenants easily.</p>
+
+  <!-- GitHub Icon Link -->
+  <a href="https://github.com/dnyanu-06/PGManagement_System" target="_blank" class="absolute bottom-4 left-4 text-violet-700 hover:text-violet-900">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path fill-rule="evenodd"
+        d="M12 0C5.37 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.807 1.305 3.495.997.107-.775.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.931 0-1.31.47-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.005-.322 3.3 1.23.957-.266 1.98-.399 3-.404 1.02.005 2.043.138 3 .404 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.243 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.805 5.628-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.795 24 17.296 24 12c0-6.627-5.373-12-12-12z"
+        clip-rule="evenodd" />
+    </svg>
+  </a>
+</div>
+
+
+
+    <!-- GitHub Button -->
+    <div class="flex justify-center mt-12">
+      <a href="https://github.com/dnyanu-06" target="_blank"
+        class="inline-blockitems-center px-6 py-3 bg-violet-600 text-white rounded-full hover:bg-white hover:text-violet-600 border border-violet-600 transition font-semibold shadow">
+        Check My GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Achievements -->
+<section id="achievements" class="py-20 bg-[#f9f9fc]">
+  <div class="max-w-6xl mx-auto px-3 text-violet-700">
+    <h2 class="text-4xl font-bold text-center text-violet-600 mb-10">Achievements</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <div class="bg-white rounded-xl shadow p-3 text-center">
+        <img src="./images/ideathon.jpg" alt="Award" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
+        <h3 class="text-xl font-semibold mb-1">Rising Star Award</h3>
+        <p>Won ₹15,000 prize at Western Maharashtra’s biggest Ideathon in 2024.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-3 text-center">
+        <img src="./images/SIH.jpg" alt="Hackathon" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
+        <h3 class="text-xl font-semibold mb-1">Smart India Hackathon</h3>
+        <p>Qualified in the internal round with the Marketmate app.</p>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow p-3 text-center">
+        <img src="./images/ranker.jpg" alt="Academic Rank" class="rounded-lg mb-4 mx-auto object-cover w-full h-60" />
+        <h3 class="text-xl font-semibold mb-1">Second Ranker - CSE Department</h3>
+        <p>Achieved second rank in the Computer Science & Engineering Department for outstanding academic performance.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-violet-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-900">
+        Get In <span class="text-violet-600">Touch</span>
+      </h2>
+      <p class="text-gray-600 mt-2">Have a project in mind or want to collaborate? I'm open to new opportunities.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900">Contact Information</h3>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-violet-100 p-3 rounded-full">
+            <svg class="w-6 h-6 text-violet-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v.01L12 13 2 4.01V4z" />
+              <path d="M22 6.5l-10 7L2 6.5V20a2 2 0 002 2h16a2 2 0 002-2V6.5z" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-gray-700 font-medium">Email</p>
+            <p class="text-gray-800">jadhavdnyaneshwari07@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-violet-100 p-3 rounded-full">
+            <svg class="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" stroke-width="2"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 5h2l3.6 7.59-1.35 2.45a1 1 0 00.27 1.27l3.6 2.4a1 1 0 001.45-.27l3.1-4.65H17a1 1 0 001-1V5h-2M7 20h10" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-gray-700 font-medium">Phone</p>
+            <p class="text-gray-800">+91 87888474870</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="bg-violet-100 p-3 rounded-full">
+            <svg class="w-6 h-6 text-violet-600" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5z" />
+            </svg>
+          </div>
+          <div>
+            <p class="text-gray-700 font-medium">Location</p>
+            <p class="text-gray-800">Satara, MH, INDIA</p>
+          </div>
+        </div>
+
+        <!-- Socials -->
+        <div>
+          <p class="text-gray-700 font-medium mt-4 mb-2">Connect With Me</p>
+          <div class="flex space-x-4 text-2xl text-violet-600">
+            <a href="https://linkedin.com/in/dnyaneshwari-jadhav-5581" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dnyanu-06" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitch"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-xl shadow-lg p-8">
+        <h3 class="text-2xl font-semibold mb-6 text-gray-900">Send a Message</h3>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-gray-700 mb-1">Your Name</label>
+            <input type="text" placeholder="Your Name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-400" />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-1">Your Email</label>
+            <input type="email" placeholder="Your Email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-400" />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-1">Your Message</label>
+            <textarea rows="4" placeholder="Hello, I'd like to talk about..."
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-400"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full py-3 bg-violet-600 text-white font-semibold rounded-lg hover:bg-violet-700 transition flex items-center justify-center gap-2">
+            Send Message
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M22 2L11 13M22 2l-6.5 20-4.5-9.5L2 9.5 22 2z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-violet-100 text-violet-700 py-6 text-center">
+    <p>© 2025 Dnyaneshwari Jadhav. All rights reserved.</p>
+    <div class="mt-2 space-x-6">
+      <a href="https://github.com/dnyanu-06" target="_blank" class="hover:text-violet-400">GitHub</a>
+      <a href="https://www.linkedin.com/in/dnyaneshwari-jadhav-5581" target="_blank" class="hover:text-violet-400">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelector("form")?.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thanks! Your message has been sent.");
+    });
+  </script>
+
+</body>
+</html>
